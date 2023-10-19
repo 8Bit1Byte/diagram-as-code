@@ -1,0 +1,59 @@
+{
+    "graph_display_name": "AML Workspace",
+    "node_dependencies": [
+      "diagrams.azure.storage.DataLakeStorage",
+      "diagrams.azure.compute.CloudServices",
+      "diagrams.azure.compute.Disks",
+      "diagrams.azure.analytics.DataFactories",
+      "diagrams.azure.analytics.StreamAnalyticsJobs"
+    ],
+    "graph_structure": {
+      "node1": {
+        "type": "node",
+        "id": "node1",
+        "info": {
+          "node_type": "CloudServices",
+          "label": "Azure Cloud Services"
+        }
+      },
+      "cluster1": {
+        "type": "cluster",
+        "label": "Cluster 1",
+        "info": [
+          {
+            "type": "node",
+            "id": "node3",
+            "info": {
+              "node_type": "DataFactories",
+              "label": "Azure Data Factory 1"
+            }
+          },
+          {
+            "type": "node",
+            "id": "node4",
+            "info": {
+              "node_type": "DataFactories",
+              "label": "Azure Data Factory 2"
+            }
+          },
+          {
+            "type": "node",
+            "id": "node5",
+            "info": {
+              "node_type": "DataFactories",
+              "label": "Azure Data Factory 3"
+            }
+          }
+        ]
+      },
+      "node2": {
+        "type": "node",
+        "id": "node2",
+        "info": {
+          "node_type": "Disks",
+          "label": "Azure Disks"
+        }
+      }
+    }
+  }
+  
